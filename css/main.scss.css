@@ -1,0 +1,81 @@
+html, body { width: 100%; height: 100%; min-height: 100%; }
+body { background: #252628; }
+
+.logotype-container { width: 100%; height: 100%; position: relative; }
+.logotype-logo, .logotype-logo-glitch { width: 466px; height: 493px; position: absolute; top: 0px; left: 0px; right: 0px; bottom: 0px; margin: auto; }
+.logotype-logo-glitch-1 { z-index: 10; animation: glitch-anim-1 2s infinite linear alternate-reverse; }
+.logotype-logo-glitch-2 { z-index: 12; animation: glitch-anim-2 2s infinite linear alternate-reverse; }
+
+
+@keyframes glitch-anim-1 {
+  0% {
+    clip: rect(20px, 466px, 40px, 0);
+  }
+  10% {
+    clip: rect(80px, 466px, 60px, 0);
+  }
+  20% {
+    clip: rect(120px, 466px, 100px, 0);
+  }
+  30% {
+    clip: rect(160px, 466px, 180px, 0);
+  }
+  40% {
+    clip: rect(200px, 466px, 180px, 0);
+  }
+  50% {
+    clip: rect(240px, 466px, 200px, 0);
+  }
+  60% {
+    clip: rect(280px, 466px, 260px, 0);
+  }
+  70% {
+    clip: rect(298px, 466px, 324px, 0);
+  }
+  80% {
+    clip: rect(348px, 466px, 363px, 0);
+  }
+  90% {
+    clip: rect(424px, 466px, 401px, 0);
+  }
+  100% {
+    clip: rect(468px, 466px, 493px, 0);
+  }
+}
+
+@keyframes glitch-anim-2 {
+  0% {
+    clip: rect(20px, 466px, 40px, 0);
+  }
+  10% {
+    clip: rect(80px, 466px, 60px, 0);
+  }
+  20% {
+    clip: rect(120px, 466px, 100px, 0);
+  }
+  30% {
+    clip: rect(160px, 466px, 180px, 0);
+  }
+  40% {
+    clip: rect(200px, 466px, 180px, 0);
+  }
+  50% {
+    clip: rect(240px, 466px, 200px, 0);
+  }
+  60% {
+    clip: rect(280px, 466px, 260px, 0);
+  }
+  70% {
+    clip: rect(298px, 466px, 324px, 0);
+  }
+  80% {
+    clip: rect(348px, 466px, 363px, 0);
+  }
+  90% {
+    clip: rect(424px, 466px, 401px, 0);
+  }
+  100% {
+    clip: rect(468px, 466px, 493px, 0);
+  }
+}
+

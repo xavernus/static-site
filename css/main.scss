@@ -1,0 +1,39 @@
+@font-face { font-family: UniSansHeavy; src: url(/fonts/uni_sans_heavy.ttf); }
+
+html, body { width: 100%; height: 100%; min-height: 100%; }
+body { background: #252628; }
+
+h1 { font-family: UniSansHeavy; margin: 40px auto; color: white; text-align: center; }
+
+.clearfix { clear: both; }
+
+.yellow { color: #cb8a43; }
+
+.logotype-container { width: 100%; height: 100%; position: relative; }
+.logotype-logo, .logotype-logo-glitch { width: 466px; height: 493px; position: absolute; top: 0px; left: 0px; right: 0px; bottom: 0px; margin: auto; }
+.logotype-logo-glitch-1 { z-index: 10; animation: glitch-anim-1 2s infinite linear alternate-reverse; }
+.logotype-logo-glitch-2 { z-index: 12; animation: glitch-anim-2 2s infinite linear alternate-reverse; }
+
+@keyframes glitch-anim-1 {
+  $steps:20;
+  @for $i from 0 through $steps{
+    #{percentage($i*(1/$steps))}{
+      clip:rect(random(493)+px,466px,random(493)+px,0);
+    }
+  }
+}
+
+@keyframes glitch-anim-2 {
+  $steps:20;
+  @for $i from 0 through $steps{
+    #{percentage($i*(1/$steps))}{
+      clip:rect(random(493)+px,466px,random(493)+px,0);
+    }
+  }
+}
+
+.logotype-scroll-down { position: absolute; bottom: 10px; left: 0px; right: 0px; margin: 0px auto; height: 60px; width: 60px; border-radius: 30px; box-sizing: border-box; padding: 10px 12px; background-color: rgba(69,72,78,0.5); cursor: pointer; color: white; font-size: 36px; transition: 0.4s; }
+.logotype-scroll-down:hover { color: #ab7a33; background-color: white; }
+
+.gallery-item { width: 25%; height: 24vw; float: left; overflow: hidden; }
+.gallery-item img { width: 100%; }
